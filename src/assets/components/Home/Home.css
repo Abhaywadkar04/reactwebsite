@@ -1,0 +1,32 @@
+/* Home.css */
+
+.animated-img {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.animated-text {
+    animation: slideInUp 1.5s ease-out;
+    font-family: 'Roboto', sans-serif; /* Change the font family */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
