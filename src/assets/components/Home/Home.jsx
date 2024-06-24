@@ -23,11 +23,11 @@ export default function Home() {
                 </div>
                 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-                <div className="p-6 bg-gray-800 rounded-lg shadow-lg animated-card">
+                <div className="p-6 bg-gray-800 rounded-lg shadow-lg animated-card" style={{ transform: 'scale(1)' }} onMouseEnter={() => { document.querySelector('.Home-card:hover').style.transform = 'scale(1.05)' }} onMouseLeave={() => { document.querySelector('.Home-card:hover').style.transform = 'scale(1)' }}>
                     <img
                         src="https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         alt="Gaming Keyboard"
-                        className="w-full h-auto rounded-lg shadow-lg mb-4 animated-img"
+                        className="w-full h-auto rounded-lg shadow-lg mb-4 animated-img Home-img"
                     />
                     <h2 className="text-2xl font-bold text-gray-200 animated-text">
                         Experience the Ultimate Gaming Experience
@@ -37,11 +37,11 @@ export default function Home() {
                     </p>
                 </div>
 
-                <div className="p-6 bg-gray-800 rounded-lg shadow-lg animated-card">
+                <div className="p-6 bg-gray-800 rounded-lg shadow-lg animated-card" style={{ transform: 'scale(1)' }} onMouseEnter={() => { document.querySelector('.Home-card:hover').style.transform = 'scale(1.05)' }} onMouseLeave={() => { document.querySelector('.Home-card:hover').style.transform = 'scale(1)' }}>
                     <img
                         src="https://images.pexels.com/photos/2399840/pexels-photo-2399840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         alt="Gaming Console"
-                        className="w-full h-auto rounded-lg shadow-lg mb-4 animated-img"
+                        className="w-full h-auto rounded-lg shadow-lg mb-4 animated-img Home-img"
                     />
                     <h2 className="text-2xl font-bold text-gray-200 animated-text">
                         Get Ready for Action
@@ -51,11 +51,11 @@ export default function Home() {
                     </p>
                 </div>
 
-                <div className="p-6 bg-gray-800 rounded-lg shadow-lg animated-card">
+                <div className="p-6 bg-gray-800 rounded-lg shadow-lg animated-card" style={{ transform: 'scale(1)' }} onMouseEnter={() => { document.querySelector('.Home-card:hover').style.transform = 'scale(1.05)' }} onMouseLeave={() => { document.querySelector('.Home-card:hover').style.transform = 'scale(1)' }}>
                     <img
                         src="https://images.pexels.com/photos/3945690/pexels-photo-3945690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                         alt="Gaming Headset"
-                        className="w-full h-auto rounded-lg shadow-lg mb-4 animated-img"
+                        className="w-full h-auto rounded-lg shadow-lg mb-4 animated-img Home-img"
                     />
                     <h2 className="text-2xl font-bold text-gray-200 animated-text">
                         Connect and Play
