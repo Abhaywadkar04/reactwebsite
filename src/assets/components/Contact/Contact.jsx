@@ -1,6 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 export default function Contact() {
+    const [result, setResult] = useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("Form Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
+    };
+
     return (
         <div className="relative flex items-center justify-center min-h-screen bg-center bg-cover" style={{ backgroundImage: `url('https://images.pexels.com/photos/6716692/pexels-photo-6716692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')` }}>
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
@@ -87,22 +112,23 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <form className="p-6 flex flex-col justify-center">
+                        <form className="p-6 flex flex-col justify-center" onSubmit={onSubmit}>
                             <div className="flex flex-col">
-                                <label for="name" className="hidden">
+                                <label htmlFor="name" className="hidden">
                                     Full Name
                                 </label>
                                 <input
-                                    type="name"
+                                    type="text"
                                     name="name"
                                     id="name"
                                     placeholder="Full Name"
+                                    required
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
 
                             <div className="flex flex-col mt-2">
-                                <label for="email" className="hidden">
+                                <label htmlFor="email" className="hidden">
                                     Email
                                 </label>
                                 <input
@@ -110,12 +136,13 @@ export default function Contact() {
                                     name="email"
                                     id="email"
                                     placeholder="Email"
+                                    required
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
 
                             <div className="flex flex-col mt-2">
-                                <label for="tel" className="hidden">
+                                <label htmlFor="tel" className="hidden">
                                     Number
                                 </label>
                                 <input
@@ -123,21 +150,35 @@ export default function Contact() {
                                     name="tel"
                                     id="tel"
                                     placeholder="Telephone Number"
+                                    required
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
 
+                            <div className="flex flex-col mt-2">
+                                <label htmlFor="message" className="hidden">
+                                    Message
+                                </label>
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    placeholder="Your Message"
+                                    required
+                                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                ></textarea>
+                            </div>
+
                             <button
                                 type="submit"
-                                className="md:w-32 bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-500 transition ease-in-out duration-300"
+                                className="md:w-32 bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg mt-3 transition ease-in-out duration-300"
                             >
                                 Submit
                             </button>
                         </form>
+                        <span className="mt-4 text-gray-200">{result}</span>
                     </div>
                 </div>
             </div>
         </div>
     );
 }
-
