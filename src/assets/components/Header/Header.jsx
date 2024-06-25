@@ -8,9 +8,10 @@ export default function Header() {
                 <div className="flex justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
-                            src="https://gaming.news/assets/img/logo.png"
-                            className="h-10"
+                            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/video-gamer-ninja-animated-logo-design-template-4b4ca82b1cfa782289646e3bafe73e3e.mp4?ts=1657058202"
+                            className="h-20 object-contain mx-auto"
                             alt="Logo"
+                            style={{ maxWidth: '10rem' }}
                         />
                     </Link>
                     <div className="hidden lg:flex lg:w-auto">
@@ -19,8 +20,10 @@ export default function Header() {
                                 <NavLink
                                     to="/"
                                     exact
-                                    className="block py-2 px-3 text-gray-700 border-b-2 border-transparent hover:text-gray-900 lg:hover:bg-transparent lg:border-0 lg:p-0"
-                                    activeClassName="text-gray-900 border-blue-500"
+                                    className={({isActive}) =>
+                                        
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-500" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
+                                    }
                                 >
                                     Home
                                 </NavLink>
@@ -28,26 +31,32 @@ export default function Header() {
                             <li>
                                 <NavLink
                                     to="/about"
-                                    className="block py-2 px-3 text-gray-700 border-b-2 border-transparent hover:text-gray-900 lg:hover:bg-transparent lg:border-0 lg:p-0"
-                                    activeClassName="text-gray-900 border-blue-500"
+                                    className={({isActive}) =>
+                                        
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-500" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
+                                    }
                                 >
                                     News
                                 </NavLink>
                             </li>
                             <li>
                                 <NavLink
-                                    to="/reviews"
-                                    className="block py-2 px-3 text-gray-700 border-b-2 border-transparent hover:text-gray-900 lg:hover:bg-transparent lg:border-0 lg:p-0"
-                                    activeClassName="text-gray-900 border-blue-500"
+                                    to="/contact"
+                                    className={({isActive}) =>
+                                        
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-500" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
+                                    }
                                 >
-                                    Reviews
+                                    contact
                                 </NavLink>
                             </li>
                             <li>
                                 <NavLink
                                     to="/guides"
-                                    className="block py-2 px-3 text-gray-700 border-b-2 border-transparent hover:text-gray-900 lg:hover:bg-transparent lg:border-0 lg:p-0"
-                                    activeClassName="text-gray-900 border-blue-500"
+                                    className={({isActive}) =>
+                                        
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-500" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
+                                    }
                                 >
                                     Guides
                                 </NavLink>
@@ -55,8 +64,10 @@ export default function Header() {
                             <li>
                                 <NavLink
                                     to="/features"
-                                    className="block py-2 px-3 text-gray-700 border-b-2 border-transparent hover:text-gray-900 lg:hover:bg-transparent lg:border-0 lg:p-0"
-                                    activeClassName="text-gray-900 border-blue-500"
+                                    className={({isActive}) =>
+                                        
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-blue-500" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0`
+                                    }
                                 >
                                     Features
                                 </NavLink>

@@ -9,7 +9,7 @@ export default function Footer() {
                     <div className="mb-8 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
-                                src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+                                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/video-gamer-ninja-animated-logo-design-template-4b4ca82b1cfa782289646e3bafe73e3e.mp4?ts=1657058202"
                                 className="h-16"
                                 alt="Logo"
                             />
@@ -25,7 +25,7 @@ export default function Footer() {
                             </li>
                             <li className="mb-2">
                                 <Link to="/about" className="hover:text-white">
-                                    About
+                                    news
                                 </Link>
                             </li>
                             <li>
@@ -82,48 +82,23 @@ export default function Footer() {
                         &copy; {new Date().getFullYear()} Abhaywadkar. All Rights Reserved.
                     </span>
                     <div className="flex space-x-4">
-                        <Link to="#" className="text-gray-400 hover:text-white">
-                            <svg
-                                className="w-5 h-5"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M12 2C6.48 2 2 6.48 2 12c0 4.95 3.65 9.05 8.39 9.8.61.11.83-.27.83-.6 0-.3-.01-1.12-.01-2.2-3.06.56-3.71-1.47-3.71-1.47-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.19 3.2.91.1-.7.38-1.19.69-1.46-2.42-.27-4.96-1.21-4.96-5.39 0-1.19.43-2.17 1.13-2.94-.11-.27-.49-1.39.11-2.9 0 0 .92-.29 3.02 1.13.88-.24 1.82-.36 2.75-.36.93 0 1.87.12 2.75.36 2.1-1.42 3.02-1.13 3.02-1.13.6 1.51.22 2.63.11 2.9.71.77 1.13 1.75 1.13 2.94 0 4.19-2.55 5.12-4.98 5.39.39.34.74 1.01.74 2.04 0 1.47-.01 2.65-.01 3.01 0 .33.22.72.84.6A10.013 10.013 0 0 0 22 12c0-5.52-4.48-10-10-10z"
-                                />
+                        <Link to="https://github.com/abhay-123" className="text-gray-400 hover:text-white">
+                            <svg aria-hidden="true" className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                             </svg>
                             <span className="sr-only">GitHub</span>
                         </Link>
-                        <Link to="#" className="text-gray-400 hover:text-white">
-                            <svg
-                                className="w-5 h-5"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M12 2C6.48 2 2 6.48 2 12c0 4.95 3.65 9.05 8.39 9.8.61.11.83-.27.83-.6 0-.3-.01-1.12-.01-2.2-3.06.56-3.71-1.47-3.71-1.47-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.19 3.2.91.1-.7.38-1.19.69-1.46-2.42-.27-4.96-1.21-4.96-5.39 0-1.19.43-2.17 1.13-2.94-.11-.27-.49-1.39.11-2.9 0 0 .92-.29 3.02 1.13.88-.24 1.82-.36 2.75-.36.93 0 1.87.12 2.75.36 2.1-1.42 3.02-1.13 3.02-1.13.6 1.51.22 2.63.11 2.9.71.77 1.13 1.75 1.13 2.94 0 4.19-2.55 5.12-4.98 5.39.39.34.74 1.01.74 2.04 0 1.47-.01 2.65-.01 3.01 0 .33.22.72.84.6A10.013 10.013 0 0 0 22 12c0-5.52-4.48-10-10-10z"
-                                />
+                        <Link to="https://www.linkedin.com/in/abhay-123/" className="text-gray-400 hover:text-white">
+                            <svg aria-hidden="true" className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
                             </svg>
-                            <span className="sr-only">Discord</span>
+                            <span className="sr-only">LinkedIn</span>
                         </Link>
-                        <Link to="#" className="text-gray-400 hover:text-white">
-                            <svg
-                                className="w-5 h-5"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M12 2C6.48 2 2 6.48 2 12c0 4.95 3.65 9.05 8.39 9.8.61.11.83-.27.83-.6 0-.3-.01-1.12-.01-2.2-3.06.56-3.71-1.47-3.71-1.47-.5-1.26-1.22-1.6-1.22-1.6-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.19 3.2.91.1-.7.38-1.19.69-1.46-2.42-.27-4.96-1.21-4.96-5.39 0-1.19.43-2.17 1.13-2.94-.11-.27-.49-1.39.11-2.9 0 0 .92-.29 3.02 1.13.88-.24 1.82-.36 2.75-.36.93 0 1.87.12 2.75.36 2.1-1.42 3.02-1.13 3.02-1.13.6 1.51.22 2.63.11 2.9.71.77 1.13 1.75 1.13 2.94 0 4.19-2.55 5.12-4.98 5.39.39.34.74 1.01.74 2.04 0 1.47-.01 2.65-.01 3.01 0 .33.22.72.84.6A10.013 10.013 0 0 0 22 12c0-5.52-4.48-10-10-10z"
-                                />
+                        <Link to="https://twitter.com/abhay_123" className="text-gray-400 hover:text-white">
+                            <svg aria-hidden="true" className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
                             </svg>
                             <span className="sr-only">Twitter</span>
                         </Link>

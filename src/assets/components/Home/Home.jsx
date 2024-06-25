@@ -10,7 +10,7 @@ export default function Home() {
             </h1>
             <div className="p-6 bg-gray-800 rounded-lg shadow-lg animated-card">
                     <img
-                        src="https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        src="https://videos.pexels.com/video-files/3946068/3946068-uhd_2732_1440_25fps.mp4"
                         alt="Gaming Keyboard"
                         className="w-full h-auto rounded-lg shadow-lg mb-4 animated-img"
                     />
@@ -25,7 +25,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
                 <div className="p-6 bg-gray-800 rounded-lg shadow-lg animated-card" style={{ transform: 'scale(1)' }} onMouseEnter={() => { document.querySelector('.Home-card:hover').style.transform = 'scale(1.05)' }} onMouseLeave={() => { document.querySelector('.Home-card:hover').style.transform = 'scale(1)' }}>
                     <img
-                        src="https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        src="https://images.pexels.com/photos/3945657/pexels-photo-3945657.jpeg?auto=compress&cs=tinysrgb&w=1200"
                         alt="Gaming Keyboard"
                         className="w-full h-auto rounded-lg shadow-lg mb-4 animated-img Home-img"
                     />
@@ -73,8 +73,8 @@ export default function Home() {
             <div className="mt-16"></div>
             <aside className="relative overflow-hidden text-white rounded-lg sm:mx-16 mx-2 sm:py-16 bg-gradient-to-r from-gray-800 to-black">
                 <div className="relative z-10 max-w-screen-xl px-4 pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
-                    <div className="flex justify-center">
-                        <img src="https://images.pexels.com/photos/1038916/pexels-photo-1038916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="console" className="w-full sm:w-2/3 rounded-lg shadow-lg animated-img"/>
+                    <div className="flex justify-center size-13">
+                        <img src="https://images.pexels.com/photos/7238759/pexels-photo-7238759.jpeg?auto=compress&cs=tinysrgb&w=1200"/>
                     </div>
                     <div className="max-w-xl sm:mt-10 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
                         <h2 className="text-4xl font-bold sm:text-5xl animated-text">
@@ -88,8 +88,8 @@ export default function Home() {
                         >
                             <svg
                                 fill="white"
-                                width="24"
-                                height="24"
+                                width="30"
+                                height="30"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fillRule="evenodd"
                                 clipRule="evenodd"
